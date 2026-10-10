@@ -26,7 +26,12 @@ export const CHANNELS: Channel[] = [
   { id: "tutorialspoint", name: "TutorialsPoint" },
   { id: "quantum-lab", name: "Quantum Lab: The E-Pathshala" },
   { id: "khan-academy", name: "Khan Academy" },
+  { id: "apna-college", name: "Apna College" },
+  { id: "physics-wallah-foundation", name: "Physics Wallah Foundation" },
 ];
+
+/** Channels preselected for every new profile (the student can change them). */
+export const DEFAULT_PREFERRED_CHANNELS = ["physics-wallah", "apna-college", "vedantu-jee"];
 
 export const VIDEO_RESOURCES: Record<NodeId, VideoResource[]> = {
   projectile: [
@@ -109,9 +114,68 @@ export const VIDEO_RESOURCES: Record<NodeId, VideoResource[]> = {
       tags: ["pythagoras_always"],
     },
   ],
-  coordinates: [],
-  slope: [],
-  deriv_rate: [],
-  motion_graphs: [],
-  kin_1d: [],
+  coordinates: [
+    {
+      id: "9Us5-Q0V_C4",
+      title: "Complete Coordinate Geometry in One Video by Ritik Sir || Chapter - 7 || Class 10 Maths",
+      channelId: "physics-wallah-foundation",
+      startAt: 0,
+      lengthSec: 6504,
+      sizeMB: 54,
+      tags: [],
+    },
+  ],
+  slope: [
+    {
+      id: "XBwek6VFHcs",
+      title: "Slope of a Line - Straight Lines | Class 11 Maths Chapter 9 | CBSE 2025-26",
+      channelId: "magnet-brains",
+      startAt: 0,
+      lengthSec: 2789,
+      sizeMB: 23,
+      tags: [],
+    },
+  ],
+  deriv_rate: [
+    {
+      id: "dU_HjFdIgLc",
+      title: "Concept of Derivative as a Rate Measurer - Differentiation | Class 11 Maths",
+      channelId: "magnet-brains",
+      startAt: 0,
+      lengthSec: 829,
+      sizeMB: 7,
+      tags: [],
+    },
+    {
+      id: "N2PpRnFqnqY",
+      title: "Derivative as a concept | Derivatives introduction | AP Calculus AB | Khan Academy",
+      channelId: "khan-academy",
+      startAt: 0,
+      lengthSec: 436,
+      sizeMB: 4,
+      tags: [],
+    },
+  ],
+  motion_graphs: [
+    {
+      id: "4OgPa7MKjRA",
+      title: "11 chap 03 : Kinematics 05 | Displacement time Graph -Velocity time Graph - Acceleration time Graph",
+      channelId: "physics-wallah",
+      startAt: 0,
+      lengthSec: 2697,
+      sizeMB: 22,
+      tags: [],
+    },
+  ],
+  kin_1d: [
+    {
+      id: "eQhOAHMankc",
+      title: "KINEMATICS 01 || Motion in a Straight Line || 1-D Motion || NEET Physics Crash Course",
+      channelId: "physics-wallah",
+      startAt: 0,
+      lengthSec: 6676,
+      sizeMB: 56,
+      tags: [],
+    },
+  ],
 };

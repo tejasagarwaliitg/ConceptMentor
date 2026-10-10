@@ -1,0 +1,1699 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "2023-Paper2-a5172cce",
+      "node": "deriv_rate",
+      "level": "C",
+      "agentLevel": "C",
+      "stem": "A particle of mass $m$ is moving in the $xy$-plane such that its velocity at a point $(x, y)$ is given as $\\vec{v} = \\alpha(y\\hat{x} + 2x\\hat{y})$, where $\\alpha$ is a non-zero constant. What is the force $\\vec{F}$ acting on the particle?",
+      "options": [
+        "$\\vec{F} = 2m\\alpha^2(x\\hat{x} + y\\hat{y})$",
+        "$\\vec{F} = m\\alpha^2(y\\hat{x} + 2x\\hat{y})$",
+        "$\\vec{F} = 2m\\alpha^2(y\\hat{x} + x\\hat{y})$",
+        "$\\vec{F} = m\\alpha^2(x\\hat{x} + 2y\\hat{y})$"
+      ],
+      "answer": 0,
+      "conceptsUsed": [
+        "derivative_as_rate_of_change",
+        "force_and_acceleration"
+      ],
+      "steps": 4,
+      "derivation": "The velocity components of the particle are $v_x = \\frac{dx}{dt} = \\alpha y$ and $v_y = \\frac{dy}{dt} = 2\\alpha x$.\n\nTo find the acceleration components, we take the time derivative of each component:\n$a_x = \\frac{dv_x}{dt} = \\alpha \\frac{dy}{dt} = \\alpha (2\\alpha x) = 2\\alpha^2 x$\n$a_y = \\frac{dv_y}{dt} = 2\\alpha \\frac{dx}{dt} = 2\\alpha (\\alpha y) = 2\\alpha^2 y$\n\nThus, the total acceleration vector is:\n$\\vec{a} = a_x \\hat{x} + a_y \\hat{y} = 2\\alpha^2 x \\hat{x} + 2\\alpha^2 y \\hat{y} = 2\\alpha^2 (x \\hat{x} + y \\hat{y})$\n\nUsing Newton's second law, $\\vec{F} = m\\vec{a}$:\n$\\vec{F} = 2m\\alpha^2 (x\\hat{x} + y\\hat{y})$",
+      "source": {
+        "exam": "JEE Advanced",
+        "tier": "advanced",
+        "year": 2023,
+        "paper": "Paper 2",
+        "url": "https://jeeadv.ac.in/past_qps/2023_2_English.pdf",
+        "anchor": "Q.3 A particle of mass 𝑚 is moving in the 𝑥𝑦-plane such that its velocity at a point (𝑥, 𝑦) is given as"
+      },
+      "status": "verified",
+      "verification": {
+        "solves": [
+          0,
+          0
+        ],
+        "agree": true
+      },
+      "flags": [
+        "answer self-derived by AI; official key not cross-checked"
+      ],
+      "addedAt": 1791634291426
+    },
+    {
+      "id": "coordinates-A-ordered-pair",
+      "kind": "single",
+      "node": "coordinates",
+      "level": "A",
+      "agentLevel": "A",
+      "diagnosticRole": "A",
+      "origin": "authored",
+      "stem": "A point is 3 units to the right of the origin and 4 units above it. What are its coordinates?",
+      "options": [
+        "$(3, 4)$",
+        "$(4, 3)$",
+        "$(-3, 4)$",
+        "$(3, -4)$"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "coordinate_order_swapped",
+        "sign_error",
+        "sign_error"
+      ],
+      "conceptsUsed": [
+        "coordinates"
+      ],
+      "steps": 2,
+      "derivation": "Positive x points right and positive y points up, so x = 3 and y = 4. The ordered pair is (3, 4).",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "coordinates",
+        "url": "",
+        "anchor": "A point is 3 units to the right of the origin and 4 units above it. What are its coordinates?"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "position",
+        "reference": "horizontal",
+        "target": "direction",
+        "representation": "text",
+        "trap": "coordinate_order_swapped"
+      },
+      "check": {
+        "formula": "3",
+        "vars": {},
+        "components": [
+          "3",
+          "4"
+        ]
+      }
+    },
+    {
+      "id": "coordinates-B1-tick-scale",
+      "kind": "single",
+      "node": "coordinates",
+      "level": "B",
+      "agentLevel": "B",
+      "diagnosticRole": "B1",
+      "origin": "authored",
+      "stem": "On a graph, one tick on each axis equals **5 units**. A point lies 3 ticks right of the origin and 2 ticks below it. What are its coordinates?",
+      "options": [
+        "$(15, -10)$",
+        "$(3, -2)$",
+        "$(-10, 15)$",
+        "$(5, -5)$"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "axis_tick_value_ignored",
+        "coordinate_order_swapped",
+        "wrong_scale"
+      ],
+      "conceptsUsed": [
+        "coordinates"
+      ],
+      "steps": 2,
+      "derivation": "x = 3 x 5 = 15; y = -2 x 5 = -10",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "coordinates",
+        "url": "",
+        "anchor": "On a graph, one tick on each axis equals **5 units**. A point lies 3 ticks right of the origin and 2"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "position",
+        "reference": "graph-scale",
+        "target": "magnitude",
+        "representation": "graph",
+        "trap": "axis_tick_value_ignored"
+      },
+      "check": {
+        "formula": "3*5",
+        "vars": {},
+        "components": [
+          "3*5",
+          "-2*5"
+        ]
+      }
+    },
+    {
+      "id": "coordinates-B2-sign-in-quadrant",
+      "kind": "single",
+      "node": "coordinates",
+      "level": "B",
+      "agentLevel": "B",
+      "diagnosticRole": "B2",
+      "origin": "authored",
+      "stem": "A particle moves from $(2, -5)$ through the displacement $(-7, 6)$. Where does it end up?",
+      "options": [
+        "$(-5, 1)$",
+        "$(-5, -1)$",
+        "$(5, -1)$",
+        "$(9, -11)$"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "sign_error",
+        "sign_error",
+        "adds_magnitudes"
+      ],
+      "conceptsUsed": [
+        "coordinates"
+      ],
+      "steps": 2,
+      "derivation": "end = (2-7, -5+6) = (-5, 1)",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "coordinates",
+        "url": "",
+        "anchor": "A particle moves from $(2, -5)$ through the displacement $(-7, 6)$. Where does it end up?"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "displacement",
+        "reference": "negative-x",
+        "target": "direction",
+        "representation": "text",
+        "trap": "sign_error"
+      },
+      "check": {
+        "formula": "2-7",
+        "vars": {},
+        "components": [
+          "2-7",
+          "-5+6"
+        ]
+      }
+    },
+    {
+      "id": "trig-A-right-triangle-ratio",
+      "kind": "single",
+      "node": "trig",
+      "level": "A",
+      "agentLevel": "A",
+      "diagnosticRole": "A",
+      "origin": "authored",
+      "stem": "In a right triangle the sides about the right angle are in ratio $3:4$ and the hypotenuse is $25$. What is the smaller acute angle?",
+      "options": [
+        "$37^\\circ$",
+        "$53^\\circ$",
+        "$30^\\circ$",
+        "$45^\\circ$"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "complementary_angle_ignored",
+        "opposite_adjacent_swapped",
+        "wrong_value"
+      ],
+      "conceptsUsed": [
+        "trig"
+      ],
+      "steps": 2,
+      "derivation": "sides 15,20,25; smaller angle opposite smaller side: tan = 15/20 = 0.75 -> 36.87 deg",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "trig",
+        "url": "",
+        "anchor": "In a right triangle the sides about the right angle are in ratio $3:4$ and the hypotenuse is $25$. W"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "length",
+        "reference": "other-angle",
+        "target": "direction",
+        "representation": "diagram",
+        "trap": "complementary_angle_ignored"
+      },
+      "check": {
+        "formula": "atan(3/4)*180/pi",
+        "vars": {}
+      }
+    },
+    {
+      "id": "trig-B1-kite-elevation",
+      "kind": "single",
+      "node": "trig",
+      "level": "B",
+      "agentLevel": "B",
+      "diagnosticRole": "B1",
+      "origin": "authored",
+      "stem": "A kite string is $40$ m long and makes an angle of $35^\\circ$ with the **horizontal**. How high is the kite?",
+      "options": [
+        "$22.9$ m",
+        "$32.8$ m",
+        "$40$ m",
+        "$28.6$ m"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "opposite_adjacent_swapped",
+        "complementary_angle_ignored",
+        "wrong_value"
+      ],
+      "conceptsUsed": [
+        "trig"
+      ],
+      "steps": 2,
+      "derivation": "height = 40 sin(35) = 22.94. The adjacent component 40 cos(35) = 32.77 is the trap.",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "trig",
+        "url": "",
+        "anchor": "A kite string is $40$ m long and makes an angle of $35^\\circ$ with the **horizontal**. How high is t"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "length",
+        "reference": "horizontal",
+        "target": "y-component",
+        "representation": "word-problem",
+        "trap": "opposite_adjacent_swapped"
+      },
+      "check": {
+        "formula": "40*sin(35*pi/180)",
+        "vars": {}
+      }
+    },
+    {
+      "id": "trig-B2-pole-shadow",
+      "kind": "single",
+      "node": "trig",
+      "level": "B",
+      "agentLevel": "B",
+      "diagnosticRole": "B2",
+      "origin": "authored",
+      "stem": "A vertical pole casts a shadow of $60$ m when the sun's angle of elevation is $40^\\circ$. How tall is the pole?",
+      "options": [
+        "$50.3$ m",
+        "$71.5$ m",
+        "$60$ m",
+        "$45.4$ m"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "opposite_adjacent_swapped",
+        "complementary_angle_ignored",
+        "wrong_value"
+      ],
+      "conceptsUsed": [
+        "trig"
+      ],
+      "steps": 2,
+      "derivation": "height = 60 tan(40) = 50.34. Using the complement gives 60 tan(50) = 71.5.",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "trig",
+        "url": "",
+        "anchor": "A vertical pole casts a shadow of $60$ m when the sun's angle of elevation is $40^\\circ$. How tall i"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "length",
+        "reference": "vertical",
+        "target": "y-component",
+        "representation": "word-problem",
+        "trap": "complementary_angle_ignored"
+      },
+      "check": {
+        "formula": "60*tan(40*pi/180)",
+        "vars": {}
+      }
+    },
+    {
+      "id": "vec_basics-A-resultant-90",
+      "kind": "single",
+      "node": "vec_basics",
+      "level": "A",
+      "agentLevel": "A",
+      "diagnosticRole": "A",
+      "origin": "authored",
+      "stem": "Two forces of magnitude $5$ N and $12$ N act at right angles. What is the magnitude of their resultant?",
+      "options": [
+        "$13$ N",
+        "$17$ N",
+        "$7$ N",
+        "$60$ N"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "adds_magnitudes",
+        "subtracts_magnitudes",
+        "multiplies"
+      ],
+      "conceptsUsed": [
+        "vec_basics"
+      ],
+      "steps": 2,
+      "derivation": "R = sqrt(5^2 + 12^2) = 13",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "vec_basics",
+        "url": "",
+        "anchor": "Two forces of magnitude $5$ N and $12$ N act at right angles. What is the magnitude of their resulta"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "force",
+        "reference": "horizontal",
+        "target": "magnitude",
+        "representation": "text",
+        "trap": "adds_magnitudes"
+      },
+      "check": {
+        "formula": "sqrt(5^2 + 12^2)",
+        "vars": {}
+      }
+    },
+    {
+      "id": "vec_basics-B1-unit-vector",
+      "kind": "single",
+      "node": "vec_basics",
+      "level": "B",
+      "agentLevel": "B",
+      "diagnosticRole": "B1",
+      "origin": "authored",
+      "stem": "What is the unit vector in the direction of $\\vec{a} = 3\\hat{i} + 4\\hat{j}$?",
+      "options": [
+        "$0.6\\hat{i} + 0.8\\hat{j}$",
+        "$3\\hat{i} + 4\\hat{j}$",
+        "$0.8\\hat{i} + 0.6\\hat{j}$",
+        "$\\frac{1}{3}\\hat{i} + \\frac{1}{4}\\hat{j}$"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "vector_equals_magnitude",
+        "opposite_adjacent_swapped",
+        "inverse_instead_of_divide"
+      ],
+      "conceptsUsed": [
+        "vec_basics"
+      ],
+      "steps": 2,
+      "derivation": "|a| = 5, unit vector = (3/5, 4/5) = (0.6, 0.8)",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "vec_basics",
+        "url": "",
+        "anchor": "What is the unit vector in the direction of $\\vec{a} = 3\\hat{i} + 4\\hat{j}$?"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "abstract",
+        "reference": "none",
+        "target": "direction",
+        "representation": "text",
+        "trap": "vector_equals_magnitude"
+      },
+      "check": {
+        "formula": "3/5",
+        "vars": {},
+        "components": [
+          "3/5",
+          "4/5"
+        ]
+      }
+    },
+    {
+      "id": "vec_basics-B2-resultant-120",
+      "kind": "single",
+      "node": "vec_basics",
+      "level": "B",
+      "agentLevel": "B",
+      "diagnosticRole": "B2",
+      "origin": "authored",
+      "stem": "Two forces of equal magnitude $F$ act at $120^\\circ$ to each other. What is the magnitude of their resultant?",
+      "options": [
+        "$F$",
+        "$2F$",
+        "$F\\sqrt{3}$",
+        "$0$"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "adds_magnitudes",
+        "pythagoras_always",
+        "assumes_cancellation"
+      ],
+      "conceptsUsed": [
+        "vec_basics"
+      ],
+      "steps": 2,
+      "derivation": "R = 2F cos(60) = F",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "vec_basics",
+        "url": "",
+        "anchor": "Two forces of equal magnitude $F$ act at $120^\\circ$ to each other. What is the magnitude of their r"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "force",
+        "reference": "other-angle",
+        "target": "magnitude",
+        "representation": "diagram",
+        "trap": "pythagoras_always"
+      },
+      "check": {
+        "formula": "2*F*cos(pi/3)",
+        "vars": {
+          "F": 1
+        }
+      }
+    },
+    {
+      "id": "slope-A-two-points",
+      "kind": "single",
+      "node": "slope",
+      "level": "A",
+      "agentLevel": "A",
+      "diagnosticRole": "A",
+      "origin": "authored",
+      "stem": "A straight line passes through $(2, 3)$ and $(6, 11)$. What is its slope?",
+      "options": [
+        "$2$",
+        "$\\frac{1}{2}$",
+        "$4$",
+        "$8$"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "axis_scale_ignored",
+        "slope_equals_height",
+        "run_over_rise"
+      ],
+      "conceptsUsed": [
+        "slope"
+      ],
+      "steps": 2,
+      "derivation": "m = (11-3)/(6-2) = 8/4 = 2",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "slope",
+        "url": "",
+        "anchor": "A straight line passes through $(2, 3)$ and $(6, 11)$. What is its slope?"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "position",
+        "reference": "none",
+        "target": "rate",
+        "representation": "text",
+        "trap": "run_over_rise"
+      },
+      "check": {
+        "formula": "(11-3)/(6-2)",
+        "vars": {}
+      }
+    },
+    {
+      "id": "slope-B1-uneven-axes",
+      "kind": "single",
+      "node": "slope",
+      "level": "B",
+      "agentLevel": "B",
+      "diagnosticRole": "B1",
+      "origin": "authored",
+      "stem": "On a distance-time graph, 1 cm horizontally is **2 s** and 1 cm vertically is **10 m**. A line rises 3 cm over a run of 4 cm. What is the speed?",
+      "options": [
+        "$3.75$ m/s",
+        "$0.75$ m/s",
+        "$7.5$ m/s",
+        "$30$ m/s"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "axis_scale_ignored",
+        "slope_equals_height",
+        "wrong_scale"
+      ],
+      "conceptsUsed": [
+        "slope"
+      ],
+      "steps": 2,
+      "derivation": "rise = 3 x 10 = 30 m; run = 4 x 2 = 8 s; speed = 3.75 m/s",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "slope",
+        "url": "",
+        "anchor": "On a distance-time graph, 1 cm horizontally is **2 s** and 1 cm vertically is **10 m**. A line rises"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "position",
+        "reference": "graph-scale",
+        "target": "rate",
+        "representation": "graph",
+        "trap": "axis_scale_ignored"
+      },
+      "check": {
+        "formula": "(3*10)/(4*2)",
+        "vars": {}
+      }
+    },
+    {
+      "id": "slope-B2-neg-slope",
+      "kind": "single",
+      "node": "slope",
+      "level": "B",
+      "agentLevel": "B",
+      "diagnosticRole": "B2",
+      "origin": "authored",
+      "stem": "A velocity-time graph shows velocity falling from $20$ m/s to $0$ in $5$ s. What is the slope of the line and what does it mean?",
+      "options": [
+        "$-4$ m/s², the acceleration",
+        "$4$ m/s, the speed",
+        "$-4$ m, the distance",
+        "$0.25$ s, the time"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "slope_equals_height",
+        "area_equals_distance_always",
+        "rate_vs_value"
+      ],
+      "conceptsUsed": [
+        "slope"
+      ],
+      "steps": 2,
+      "derivation": "slope = (0-20)/(5-0) = -4 m/s^2, which is the acceleration",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "slope",
+        "url": "",
+        "anchor": "A velocity-time graph shows velocity falling from $20$ m/s to $0$ in $5$ s. What is the slope of the"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "velocity",
+        "reference": "none",
+        "target": "sign",
+        "representation": "graph",
+        "trap": "slope_equals_height"
+      },
+      "check": {
+        "formula": "(0-20)/(5-0)",
+        "vars": {}
+      }
+    },
+    {
+      "id": "vec_comp-A-angle-from-horizontal",
+      "kind": "single",
+      "node": "vec_comp",
+      "level": "A",
+      "agentLevel": "A",
+      "diagnosticRole": "A",
+      "origin": "authored",
+      "stem": "A velocity of $25$ m/s points at $37^\\circ$ above the +x axis. What is its x-component?",
+      "options": [
+        "$20$ m/s",
+        "$15$ m/s",
+        "$25$ m/s",
+        "$12.5$ m/s"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "swapped_sin_cos",
+        "no_resolution",
+        "wrong_factor"
+      ],
+      "conceptsUsed": [
+        "vec_comp"
+      ],
+      "steps": 2,
+      "derivation": "vx = 25 cos37 = 25(0.8) = 20",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "vec_comp",
+        "url": "",
+        "anchor": "A velocity of $25$ m/s points at $37^\\circ$ above the +x axis. What is its x-component?"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "velocity",
+        "reference": "horizontal",
+        "target": "x-component",
+        "representation": "text",
+        "trap": "swapped_sin_cos"
+      },
+      "check": {
+        "formula": "25*cos(pi*37/180)",
+        "vars": {}
+      }
+    },
+    {
+      "id": "vec_comp-B1-angle-from-vertical-25",
+      "kind": "single",
+      "node": "vec_comp",
+      "level": "B",
+      "agentLevel": "B",
+      "diagnosticRole": "B1",
+      "origin": "authored",
+      "stem": "A displacement of $25$ m points at $37^\\circ$ from the **vertical** (+y axis), towards +x. How far is the point from the y-axis measured along x?",
+      "options": [
+        "$15$ m",
+        "$20$ m",
+        "$25$ m",
+        "$12.5$ m"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "cos_always_for_x",
+        "swapped_sin_cos",
+        "no_resolution"
+      ],
+      "conceptsUsed": [
+        "vec_comp"
+      ],
+      "steps": 2,
+      "derivation": "distance from the y-axis along x is the x-component. Angle from vertical 37 -> x = 25 sin37 = 15",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "vec_comp",
+        "url": "",
+        "anchor": "A displacement of $25$ m points at $37^\\circ$ from the **vertical** (+y axis), towards +x. How far i"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "displacement",
+        "reference": "vertical",
+        "target": "x-component",
+        "representation": "text",
+        "trap": "cos_always_for_x"
+      },
+      "check": {
+        "formula": "25*sin(pi*37/180)",
+        "vars": {}
+      }
+    },
+    {
+      "id": "vec_comp-B2-third-quadrant",
+      "kind": "single",
+      "node": "vec_comp",
+      "level": "B",
+      "agentLevel": "B",
+      "diagnosticRole": "B2",
+      "origin": "authored",
+      "stem": "A force of $20$ N acts at $30^\\circ$ below the $-x$ axis (third quadrant). What is its y-component?",
+      "options": [
+        "$-10$ N",
+        "$-10\\sqrt{3}$ N",
+        "$10$ N",
+        "$10\\sqrt{3}$ N"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "component_sign_ignored",
+        "sin_cos_swapped",
+        "component_sign_ignored"
+      ],
+      "conceptsUsed": [
+        "vec_comp"
+      ],
+      "steps": 2,
+      "derivation": "third quadrant: both components negative. y = -20 sin30 = -10",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "vec_comp",
+        "url": "",
+        "anchor": "A force of $20$ N acts at $30^\\circ$ below the $-x$ axis (third quadrant). What is its y-component?"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "force",
+        "reference": "negative-x",
+        "target": "y-component",
+        "representation": "diagram",
+        "trap": "component_sign_ignored"
+      },
+      "check": {
+        "formula": "-20*sin(pi/6)",
+        "vars": {}
+      }
+    },
+    {
+      "id": "deriv_rate-A-average-vs-instant",
+      "kind": "single",
+      "node": "deriv_rate",
+      "level": "A",
+      "agentLevel": "A",
+      "diagnosticRole": "A",
+      "origin": "authored",
+      "stem": "For $y = x^2$, what is the rate of change of $y$ with respect to $x$ at $x = 3$?",
+      "options": [
+        "$6$",
+        "$9$",
+        "$3$",
+        "$2$"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "average_equals_instantaneous",
+        "value_equals_rate",
+        "wrong_power"
+      ],
+      "conceptsUsed": [
+        "deriv_rate"
+      ],
+      "steps": 2,
+      "derivation": "dy/dx = 2x = 6 at x = 3. The value 9 is y, not the rate.",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "deriv_rate",
+        "url": "",
+        "anchor": "For $y = x^2$, what is the rate of change of $y$ with respect to $x$ at $x = 3$?"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "abstract",
+        "reference": "none",
+        "target": "rate",
+        "representation": "text",
+        "trap": "value_equals_rate"
+      },
+      "check": {
+        "formula": "2*3",
+        "vars": {}
+      }
+    },
+    {
+      "id": "deriv_rate-B1-area-expanding",
+      "kind": "single",
+      "node": "deriv_rate",
+      "level": "B",
+      "agentLevel": "B",
+      "diagnosticRole": "B1",
+      "origin": "authored",
+      "stem": "A rectangle has sides $10$ cm and $5$ cm. The length grows at $2$ cm/s and the width shrinks at $1$ cm/s. At what rate is the area changing now?",
+      "options": [
+        "$0$ cm²/s",
+        "$15$ cm²/s",
+        "$5$ cm²/s",
+        "$20$ cm²/s"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "product_rule_missed",
+        "average_equals_instantaneous",
+        "adds_magnitudes"
+      ],
+      "conceptsUsed": [
+        "deriv_rate"
+      ],
+      "steps": 2,
+      "derivation": "dA/dt = l(dw/dt) + w(dl/dt) = 10(-1) + 5(2) = -10 + 10 = 0",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "deriv_rate",
+        "url": "",
+        "anchor": "A rectangle has sides $10$ cm and $5$ cm. The length grows at $2$ cm/s and the width shrinks at $1$ "
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "length",
+        "reference": "none",
+        "target": "rate",
+        "representation": "word-problem",
+        "trap": "product_rule_missed"
+      },
+      "check": {
+        "formula": "10*(-1) + 5*2",
+        "vars": {}
+      }
+    },
+    {
+      "id": "deriv_rate-B2-graph-tangent",
+      "kind": "single",
+      "node": "deriv_rate",
+      "level": "B",
+      "agentLevel": "B",
+      "diagnosticRole": "B2",
+      "origin": "authored",
+      "stem": "A position-time graph is a curve whose slope is steep at $t = 1$ s and flat at $t = 5$ s. Which statement is correct?",
+      "options": [
+        "Speed is high at 1 s and low at 5 s.",
+        "Speed is the same at both instants.",
+        "Position is the same at both instants.",
+        "Acceleration must be zero at 5 s."
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "value_equals_rate",
+        "position_equals_velocity",
+        "slope_zero_means_accel_zero"
+      ],
+      "conceptsUsed": [
+        "deriv_rate"
+      ],
+      "steps": 2,
+      "derivation": "slope of x-t is velocity, so steep slope = high speed. Flat slope = v = 0 at that instant only.",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "deriv_rate",
+        "url": "",
+        "anchor": "A position-time graph is a curve whose slope is steep at $t = 1$ s and flat at $t = 5$ s. Which stat"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "graph",
+        "reference": "graph-scale",
+        "target": "rate",
+        "representation": "graph",
+        "trap": "value_equals_rate"
+      }
+    },
+    {
+      "id": "motion_graphs-A-vt-area",
+      "kind": "single",
+      "node": "motion_graphs",
+      "level": "A",
+      "agentLevel": "A",
+      "diagnosticRole": "A",
+      "origin": "authored",
+      "stem": "A velocity-time graph is a triangle: velocity rises linearly from $0$ to $10$ m/s in $4$ s. What distance is covered?",
+      "options": [
+        "$20$ m",
+        "$40$ m",
+        "$10$ m",
+        "$5$ m"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "area_equals_distance_always",
+        "graph_height_equals_velocity",
+        "wrong_power"
+      ],
+      "conceptsUsed": [
+        "motion_graphs"
+      ],
+      "steps": 2,
+      "derivation": "area = 1/2 x base x height = 0.5 x 4 x 10 = 20 m",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "motion_graphs",
+        "url": "",
+        "anchor": "A velocity-time graph is a triangle: velocity rises linearly from $0$ to $10$ m/s in $4$ s. What dis"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "velocity",
+        "reference": "graph-scale",
+        "target": "area",
+        "representation": "graph",
+        "trap": "slope_instead_of_area"
+      },
+      "check": {
+        "formula": "0.5*4*10",
+        "vars": {},
+        "key": 20
+      }
+    },
+    {
+      "id": "motion_graphs-B1-xt-slope",
+      "kind": "single",
+      "node": "motion_graphs",
+      "level": "B",
+      "agentLevel": "B",
+      "diagnosticRole": "B1",
+      "origin": "authored",
+      "stem": "A position-time graph is a straight line from $(0, 0)$ to $(5, 20)$. What does this tell you about the motion?",
+      "options": [
+        "Constant velocity of 4 m/s.",
+        "Constant acceleration of 4 m/s².",
+        "The object is at rest.",
+        "Velocity increases with time."
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "graph_height_equals_velocity",
+        "slope_vs_acceleration",
+        "value_equals_rate"
+      ],
+      "conceptsUsed": [
+        "motion_graphs"
+      ],
+      "steps": 2,
+      "derivation": "straight x-t line = constant slope = constant velocity = 20/5 = 4 m/s",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "motion_graphs",
+        "url": "",
+        "anchor": "A position-time graph is a straight line from $(0, 0)$ to $(5, 20)$. What does this tell you about t"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "position",
+        "reference": "none",
+        "target": "compare",
+        "representation": "graph",
+        "trap": "graph_height_equals_velocity"
+      }
+    },
+    {
+      "id": "motion_graphs-B2-negative-area",
+      "kind": "single",
+      "node": "motion_graphs",
+      "level": "B",
+      "agentLevel": "B",
+      "diagnosticRole": "B2",
+      "origin": "authored",
+      "stem": "A velocity-time graph is a straight line from $+10$ m/s to $-10$ m/s over $4$ s, crossing zero at the middle. What is the displacement at $t = 4$ s?",
+      "options": [
+        "$0$ m",
+        "$20$ m",
+        "$40$ m",
+        "$-20$ m"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "area_equals_distance_always",
+        "sign_error",
+        "distance_equals_displacement"
+      ],
+      "conceptsUsed": [
+        "motion_graphs"
+      ],
+      "steps": 2,
+      "derivation": "positive area = 1/2 x 2 x 10 = 10; negative area = -10; displacement = 0",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "motion_graphs",
+        "url": "",
+        "anchor": "A velocity-time graph is a straight line from $+10$ m/s to $-10$ m/s over $4$ s, crossing zero at th"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "velocity",
+        "reference": "graph-scale",
+        "target": "sign",
+        "representation": "graph",
+        "trap": "area_equals_distance_always"
+      },
+      "check": {
+        "formula": "0.5*2*10 - 0.5*2*10",
+        "vars": {},
+        "key": 0
+      }
+    },
+    {
+      "id": "kin_1d-A-two-stage",
+      "kind": "single",
+      "node": "kin_1d",
+      "level": "A",
+      "agentLevel": "A",
+      "diagnosticRole": "A",
+      "origin": "authored",
+      "stem": "A car accelerates from rest at $3$ m/s² for $4$ s, then brakes at $1$ m/s² until it stops. What is the total distance covered?",
+      "options": [
+        "$96$ m",
+        "$72$ m",
+        "$24$ m",
+        "$48$ m"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "distance_equals_displacement",
+        "constant_acceleration_assumed",
+        "wrong_value"
+      ],
+      "conceptsUsed": [
+        "kin_1d"
+      ],
+      "steps": 2,
+      "derivation": "phase 1: v = 12 m/s, s = 24 m; phase 2: s = v^2/(2a) = 72 m; total = 96 m",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "kin_1d",
+        "url": "",
+        "anchor": "A car accelerates from rest at $3$ m/s² for $4$ s, then brakes at $1$ m/s² until it stops. What is t"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "velocity",
+        "reference": "none",
+        "target": "magnitude",
+        "representation": "word-problem",
+        "trap": "constant_acceleration_assumed"
+      },
+      "check": {
+        "formula": "0.5*3*4^2 + (3*4)^2/(2*1)",
+        "vars": {},
+        "key": 96
+      }
+    },
+    {
+      "id": "kin_1d-B1-distance-vs-displacement",
+      "kind": "single",
+      "node": "kin_1d",
+      "level": "B",
+      "agentLevel": "B",
+      "diagnosticRole": "B1",
+      "origin": "authored",
+      "stem": "A student walks $4$ m east, then $3$ m west. What is the distance travelled and the magnitude of the displacement?",
+      "options": [
+        "$7$ m and $1$ m",
+        "$1$ m and $7$ m",
+        "$7$ m and $7$ m",
+        "$1$ m and $1$ m"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "distance_equals_displacement",
+        "sign_error",
+        "adds_magnitudes"
+      ],
+      "conceptsUsed": [
+        "kin_1d"
+      ],
+      "steps": 2,
+      "derivation": "distance = 4 + 3 = 7 m; displacement = 4 - 3 = 1 m",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "kin_1d",
+        "url": "",
+        "anchor": "A student walks $4$ m east, then $3$ m west. What is the distance travelled and the magnitude of the"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "displacement",
+        "reference": "none",
+        "target": "compare",
+        "representation": "word-problem",
+        "trap": "distance_equals_displacement"
+      },
+      "check": {
+        "formula": "4+3",
+        "vars": {},
+        "key": 7,
+        "components": [
+          "4+3",
+          "4-3"
+        ]
+      }
+    },
+    {
+      "id": "kin_1d-B2-negative-accel",
+      "kind": "single",
+      "node": "kin_1d",
+      "level": "B",
+      "agentLevel": "B",
+      "diagnosticRole": "B2",
+      "origin": "authored",
+      "stem": "A ball is thrown **upward** at $20$ m/s. Taking up as positive, what is its velocity after $3$ s? ($g = 10$ m/s²)",
+      "options": [
+        "$-10$ m/s",
+        "$10$ m/s",
+        "$-30$ m/s",
+        "$30$ m/s"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "sign_error",
+        "constant_acceleration_assumed",
+        "wrong_value"
+      ],
+      "conceptsUsed": [
+        "kin_1d"
+      ],
+      "steps": 2,
+      "derivation": "v = u - gt = 20 - 30 = -10 m/s. Negative means already coming down.",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "kin_1d",
+        "url": "",
+        "anchor": "A ball is thrown **upward** at $20$ m/s. Taking up as positive, what is its velocity after $3$ s? ($"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "velocity",
+        "reference": "vertical",
+        "target": "sign",
+        "representation": "text",
+        "trap": "sign_error"
+      },
+      "check": {
+        "formula": "20-10*3",
+        "vars": {},
+        "key": -10
+      }
+    },
+    {
+      "id": "projectile-A-height",
+      "kind": "single",
+      "node": "projectile",
+      "level": "A",
+      "agentLevel": "A",
+      "diagnosticRole": "A",
+      "origin": "authored",
+      "stem": "A projectile is launched at $30^\\circ$ with speed $20$ m/s. What is its maximum height? ($g = 10$ m/s²)",
+      "options": [
+        "$5$ m",
+        "$10$ m",
+        "$20$ m",
+        "$2.5$ m"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "total_time_for_top",
+        "uses_horizontal_speed",
+        "wrong_value"
+      ],
+      "conceptsUsed": [
+        "projectile"
+      ],
+      "steps": 2,
+      "derivation": "H = u^2 sin^2(theta) / 2g = 400 x 0.25 / 20 = 5 m",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "projectile",
+        "url": "",
+        "anchor": "A projectile is launched at $30^\\circ$ with speed $20$ m/s. What is its maximum height? ($g = 10$ m/"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "velocity",
+        "reference": "horizontal",
+        "target": "magnitude",
+        "representation": "text",
+        "trap": "uses_horizontal_speed"
+      },
+      "check": {
+        "formula": "20^2 * 0.5^2 / (2*10)",
+        "vars": {},
+        "key": 5
+      }
+    },
+    {
+      "id": "projectile-B1-angle-from-vertical",
+      "kind": "single",
+      "node": "projectile",
+      "level": "B",
+      "agentLevel": "B",
+      "diagnosticRole": "B1",
+      "origin": "authored",
+      "stem": "A projectile is launched at $30^\\circ$ from the vertical with speed $20$ m/s. What is its initial horizontal velocity?",
+      "options": [
+        "$10$ m/s",
+        "$17.3$ m/s",
+        "$20$ m/s",
+        "$0$ m/s"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "angle_from_horizontal_assumed",
+        "no_resolution",
+        "zero_horizontal_velocity"
+      ],
+      "conceptsUsed": [
+        "projectile"
+      ],
+      "steps": 2,
+      "derivation": "The angle is measured from the vertical, so the horizontal component is 20 sin(30 degrees) = 10 m/s. Using 20 cos(30 degrees) gives 17.3 m/s and uses the wrong reference axis.",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "projectile",
+        "url": "",
+        "anchor": "A projectile is launched at $30^\\circ$ from the vertical with speed $20$ m/s. What is its initial ho"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "velocity",
+        "reference": "vertical",
+        "target": "x-component",
+        "representation": "text",
+        "trap": "angle_from_horizontal_assumed"
+      },
+      "check": {
+        "formula": "20*sin(pi/6)",
+        "vars": {}
+      }
+    },
+    {
+      "id": "projectile-B2-apex-speed",
+      "kind": "single",
+      "node": "projectile",
+      "level": "B",
+      "agentLevel": "B",
+      "diagnosticRole": "B2",
+      "origin": "authored",
+      "stem": "A projectile is launched at $45^\\circ$ with speed $20$ m/s. What is its speed at the highest point of the flight?",
+      "options": [
+        "$10\\sqrt{2}$ m/s",
+        "$0$ m/s",
+        "$20$ m/s",
+        "$10$ m/s"
+      ],
+      "answer": 0,
+      "tags": [
+        null,
+        "zero_velocity_at_apex",
+        "uses_horizontal_speed",
+        "wrong_value"
+      ],
+      "conceptsUsed": [
+        "projectile"
+      ],
+      "steps": 2,
+      "derivation": "at apex vy = 0 but vx unchanged: v = 20 cos45 = 14.14 = 10 sqrt(2)",
+      "source": {
+        "exam": "Original authored diagnostic item",
+        "tier": "main",
+        "year": 2026,
+        "paper": "projectile",
+        "url": "",
+        "anchor": "A projectile is launched at $45^\\circ$ with speed $20$ m/s. What is its speed at the highest point o"
+      },
+      "status": "needs_review",
+      "verification": {
+        "solves": [],
+        "agree": false
+      },
+      "flags": [
+        "draft-authored-content",
+        "requires-human-review"
+      ],
+      "addedAt": 1791640118477,
+      "variant": {
+        "surface": "velocity",
+        "reference": "horizontal",
+        "target": "compare",
+        "representation": "text",
+        "trap": "zero_velocity_at_apex"
+      },
+      "check": {
+        "formula": "20*cos(pi/4)",
+        "vars": {},
+        "key": 14.1421
+      }
+    },
+    {
+      "id": "demo-multi",
+      "kind": "multi",
+      "node": "projectile",
+      "level": "B",
+      "agentLevel": "B",
+      "stem": "A projectile of mass $m$ is launched at an angle of 30 degrees with speed $v$. Which of the following statements about the motion are TRUE?",
+      "options": [
+        "The range is maximum at 45 degrees",
+        "The speed is constant",
+        "The horizontal velocity is constant",
+        "The acceleration is zero at the apex"
+      ],
+      "answer": null,
+      "answerIndices": [
+        0,
+        2
+      ],
+      "answerValue": null,
+      "tolerance": null,
+      "unit": null,
+      "conceptsUsed": [
+        "projectile"
+      ],
+      "steps": 3,
+      "derivation": "Range $R = v^2 \\sin 2\\theta / g$.",
+      "source": {
+        "exam": "JEE Advanced",
+        "tier": "advanced",
+        "year": 2023,
+        "paper": "Paper 2",
+        "url": "https://jeeadv.ac.in/past_qps/2023_2_English.pdf",
+        "anchor": "A projectile of mass m is launched"
+      },
+      "status": "verified",
+      "verification": {
+        "solves": [
+          -1,
+          -1
+        ],
+        "agree": true
+      },
+      "flags": [
+        "test fixture"
+      ],
+      "addedAt": 0
+    },
+    {
+      "id": "demo-numeric",
+      "kind": "numeric",
+      "node": "projectile",
+      "level": "B",
+      "agentLevel": "B",
+      "stem": "A projectile of mass $m$ is launched at an angle of 30 degrees with speed $v$. Find the horizontal range in metres when launched at 45 degrees with speed 20 m/s. Take $g = 10$.",
+      "options": [],
+      "answer": null,
+      "answerIndices": null,
+      "answerValue": 40,
+      "tolerance": 0.5,
+      "unit": "m",
+      "conceptsUsed": [
+        "projectile"
+      ],
+      "steps": 3,
+      "derivation": "Range $R = v^2 \\sin 2\\theta / g$.",
+      "source": {
+        "exam": "JEE Advanced",
+        "tier": "advanced",
+        "year": 2023,
+        "paper": "Paper 2",
+        "url": "https://jeeadv.ac.in/past_qps/2023_2_English.pdf",
+        "anchor": "A projectile of mass m is launched"
+      },
+      "status": "verified",
+      "verification": {
+        "solves": [
+          -1,
+          -1
+        ],
+        "agree": true
+      },
+      "flags": [
+        "test fixture"
+      ],
+      "addedAt": 0
+    }
+  ],
+  "processed": [
+    "https://jeeadv.ac.in/past_qps/2014_1.pdf#0",
+    "https://jeeadv.ac.in/past_qps/2014_1.pdf#11",
+    "https://jeeadv.ac.in/past_qps/2014_1.pdf#10",
+    "https://jeeadv.ac.in/past_qps/2025_1_English.pdf#9",
+    "https://jeeadv.ac.in/past_qps/2025_1_English.pdf#6",
+    "https://jeeadv.ac.in/past_qps/2025_1_English.pdf#7"
+  ]
+}

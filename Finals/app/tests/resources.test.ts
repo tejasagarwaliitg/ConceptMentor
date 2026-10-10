@@ -32,9 +32,9 @@ const vC = () =>
   fixture({ id: "CCCCCCCCCCC", title: "Gamma resolution lesson", channelId: "allen" });
 
 describe("video catalog", () => {
-  it("has 15 channels with unique ids", () => {
-    expect(CHANNELS).toHaveLength(15);
-    expect(new Set(CHANNELS.map((c) => c.id)).size).toBe(15);
+  it("has 17 channels with unique ids", () => {
+    expect(CHANNELS).toHaveLength(17);
+    expect(new Set(CHANNELS.map((c) => c.id)).size).toBe(17);
   });
 
   it("covers all 9 nodes with at most 2 entries each", () => {
@@ -45,8 +45,10 @@ describe("video catalog", () => {
     for (const node of ["projectile", "vec_comp", "trig", "vec_basics"] as const) {
       expect(VIDEO_RESOURCES[node]).toHaveLength(2);
     }
+    // every other live node has at least one reviewed video, so a wrong
+    // submission always has something to lead the student to
     for (const node of ["coordinates", "slope", "deriv_rate", "motion_graphs", "kin_1d"] as const) {
-      expect(VIDEO_RESOURCES[node]).toHaveLength(0);
+      expect(VIDEO_RESOURCES[node].length).toBeGreaterThanOrEqual(1);
     }
   });
 
@@ -136,7 +138,7 @@ describe("repair section defaults", () => {
   it("hasCuratedVideos is false on empty lists", () => {
     expect(hasCuratedVideos([])).toBe(false);
     expect(hasCuratedVideos(VIDEO_RESOURCES.trig)).toBe(true);
-    expect(hasCuratedVideos(VIDEO_RESOURCES.slope)).toBe(false);
+    expect(hasCuratedVideos(VIDEO_RESOURCES.slope)).toBe(true);
   });
 });
 

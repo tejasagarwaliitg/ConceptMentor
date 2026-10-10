@@ -34,7 +34,7 @@ A student who shows difficulty on a node gets priority-ordered (max 2) curated v
 ### Agent vs code ordering
 - **D-12:** Deterministic code ranks the videos (tag → teacher → preference). The mentor agent keeps ordering only the repair *sections* via `compose_repair` (validated, `check` mandatory). Product works with the agent disabled.
 - **D-13:** Availability-aware section ordering: the repair-order prompt carries a `hasVideo` flag; uncurated nodes order read above video.
-- **D-14:** One honest deterministic trace row for video ranking in the decision panel (ranked N from M curated: tag-match + preferred channel). No fabricated agent activity.
+- **D-14:** One honest deterministic trace caption for video ranking under the Repair video list (ranked N from M curated: tag-match + preferred teacher) — no DecisionPanel exists in the codebase, so the caption location carries the honest-trace intent. No fabricated agent activity.
 - **D-15:** "Samajh aaya?" (yes/thoda/nahi) after a video is stored per-profile and reorders that student's future video order only. No effectiveness claims, no teacher warnings (idea.md §8).
 
 ### Carried forward (Phase 1 + locked spec, not re-asked)

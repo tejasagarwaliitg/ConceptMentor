@@ -1,0 +1,11 @@
+.DS_Store
+/node_modules/
+.chart-data-*/
+.pitch-build/
+app/.vitest/
+app/AGENTS.md
+app/t.mts
+app/w.tmp.mjs
+app/shot.mts
+app/scripts/ocrbin
+.planning/research/.cache/
