@@ -24,7 +24,7 @@ Plans:
 Plans:
 **Wave 1**
 
-- [ ] 02-01-PLAN.md — Video catalog plus deterministic ranker, URL builder, and resources gate test
+- [x] 02-01-PLAN.md — Video catalog plus deterministic ranker, URL builder, and resources gate test
 
 **Wave 2** *(blocked on Wave 1 completion)*
 
